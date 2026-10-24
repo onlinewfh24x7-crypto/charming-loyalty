@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charming Beauty Care | Loyalty Club</title>
+<meta name="theme-color" content="#54152b">
+<style>
+:root {
+  --wine: #54152b;
+  --gold: #c9a45c;
+  --cream: #fffaf2;
+  --ink: #33232a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+}
+header {
+  background: var(--wine);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-bottom: 3px solid var(--gold);
+}
+.brand {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin: 0 0 8px;
+}
+header p { margin: 0; font-size: 13px; letter-spacing: 2px; }
+main {
+  width: min(92%, 480px);
+  margin: 30px auto;
+}
+.intro { text-align: center; }
+h2 {
+  font-family: Georgia, serif;
+  color: var(--wine);
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+.intro p { line-height: 1.7; color: #6c5b60; }
+.card {
+  margin: 24px 0;
+  padding: 25px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #54152b, #32101e);
+  color: white;
+  box-shadow: 0 10px 28px #54152b20;
+}
+.card-label {
+  color: var(--gold);
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 12px 0;
+}
+.stamps {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  margin: 22px 0;
+}
+.stamp {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  font-size: 15px;
+}
+.card small { color: #f4dfbb; line-height: 1.6; }
+.panel {
+  background: white;
+  border: 1px solid #eadfce;
+  border-radius: 16px;
+  padding: 22px;
+  margin-top: 22px;
+}
+.panel h3 { color: var(--wine); margin-top: 0; }
+label {
+  display: block;
+  font-size: 14px;
+  margin: 16px 0 7px;
+}
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9c8c5;
+  border-radius: 9px;
+  font-size: 16px;
+  background: #fffdfa;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--wine);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.note {
+  font-size: 12px;
+  color: #75666a;
+  line-height: 1.6;
+}
+footer {
+  text-align: center;
+  padding: 22px 12px;
+  background: #f2e8dd;
+  font-size: 12px;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="brand">CHARMING BEAUTY CARE</h1>
+  <p>BEAUTY • CARE • REWARDS</p>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Your Beauty, Your Rewards</h2>
+    <p>
+      Charming Beauty Care Loyalty Club में आपका स्वागत है।
+      हर विज़िट के साथ अपने रिवॉर्ड्स की ओर बढ़ें।
+    </p>
+  </section>
+
+  <section class="card">
+    <div class="card-label">EXCLUSIVE MEMBERSHIP</div>
+    <h3>Beauty Rewards Card</h3>
+    <p>CHARMING BEAUTY CARE</p>
+    <div class="stamps">
+      <div class="stamp">1</div>
+      <div class="stamp">2</div>
+      <div class="stamp">3</div>
+      <div class="stamp">4</div>
+      <div class="stamp">5</div>
+      <div class="stamp">6</div>
+    </div>
+    <small>
+      हर विज़िट पर अपने Loyalty Stamps बढ़ाएँ।
+      रिवॉर्ड के नियम सैलून द्वारा निर्धारित किए जाएँगे।
+    </small>
+  </section>
+
+  <section class="panel">
+    <h3>Become a Member</h3>
+    <p>अपना Digital Loyalty Card बनवाने के लिए तैयार रहें।</p>
+
+    <form id="memberForm">
+      <label for="customerName">आपका नाम</label>
+      <input id="customerName" name="customerName"
+        type="text" placeholder="अपना नाम लिखें" required>
+
+      <label for="mobile">मोबाइल नंबर</label>
+      <input id="mobile" name="mobile" type="tel"
+        inputmode="numeric" pattern="[6-9][0-9]{9}"
+        maxlength="10" placeholder="10 अंकों का नंबर" required>
+
+      <button type="submit">Register for Loyalty Card</button>
+    </form>
+
+    <p class="note" id="status">
+      रजिस्ट्रेशन और डेटा सेव करने की सुविधा अगले चरण में
+      सुरक्षित रूप से जोड़ी जाएगी।
+    </p>
+  </section>
+</main>
+
+<footer>
+  <strong>CHARMING BEAUTY CARE</strong><br>
+  Ladies Beauty Parlour & Training Center<br>
+  Arera Colony, Bhopal
+</footer>
+
+<script>
+document.getElementById("memberForm").addEventListener("submit",
+  function(event) {
+    event.preventDefault();
+    document.getElementById("status").textContent =
+      "यह शुरुआती डिज़ाइन है। रजिस्ट्रेशन अभी चालू नहीं है। अगले चरण में सुरक्षित डेटा सिस्टम जोड़ा जाएगा।";
+  }
+);
+</script>
+
+</body>
+</html>
