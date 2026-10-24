@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Loyalty Card | Charming Beauty Care</title>
+  <meta name="theme-color" content="#54152b">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 14px;
+      font-family: Arial, sans-serif;
+      background: #fbf6f0;
+      color: #3d2630;
+    }
+
+    .container {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      text-align: center;
+      margin: 12px 0 24px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      color: #54152b;
+      font-family: Georgia, serif;
+      font-size: 27px;
+      letter-spacing: 1px;
+    }
+
+    .brand p {
+      margin-top: 8px;
+      color: #9b7842;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .card {
+      padding: 25px 20px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #54152b, #791f40);
+      color: #fff8ee;
+      border: 1px solid #c7a15b;
+      box-shadow: 0 12px 30px #54152b24;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-top h2 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-weight: normal;
+    }
+
+    .crown {
+      color: #e8c77e;
+      font-size: 28px;
+    }
+
+    .tag {
+      color: #e8c77e;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 7px;
+    }
+
+    .line {
+      height: 1px;
+      background: #c7a15b80;
+      margin: 23px 0;
+    }
+
+    .customer-label {
+      color: #e8c77e;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    .customer-name {
+      font-size: 22px;
+      margin: 7px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .customer-id {
+      font-size: 12px;
+      color: #f0dfd0;
+      overflow-wrap: anywhere;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+
+    .stat {
+      padding: 13px 4px;
+      border: 1px solid #ffffff35;
+      border-radius: 12px;
+    }
+
+    .number {
+      color: #e8c77e;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .stat p {
+      margin: 7px 0 0;
+      font-size: 11px;
+    }
+
+    .stamp-title {
+      margin: 24px 0 13px;
+      color: #e8c77e;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .stamps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .stamp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1;
+      border: 1px solid #e8c77e;
+      border-radius: 50%;
+      color: #e8c77e;
+      font-size: 20px;
+    }
+
+    .stamp-note {
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #fff0df;
+      margin: 17px 0 0;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 16px;
+      border: 1px solid #eadbc8;
+      border-radius: 14px;
+      background: white;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .notice strong {
+      color: #54152b;
+    }
+
+    footer {
+      text-align: center;
+      color: #8a756d;
+      font-size: 11px;
+      line-height: 1.8;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="brand">
+      <h1>CHARMING BEAUTY CARE</h1>
+      <p>BEAUTY • CARE • LOYALTY</p>
+    </header>
+
+    <section class="card">
+      <div class="card-top">
+        <div>
+          <h2>My Loyalty Card</h2>
+          <div class="tag">EXCLUSIVE MEMBER PRIVILEGES</div>
+        </div>
+        <div class="crown">✦</div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="customer-label">MEMBER NAME</div>
+      <div class="customer-name">आपका नाम</div>
+      <div class="customer-id">Customer ID: डेटा जुड़ने पर दिखेगी</div>
+
+      <div class="line"></div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="number">0</div>
+          <p>Visits</p>
+        </div>
+        <div class="stat">
+          <div class="number">0/5</div>
+          <p>Stamps</p>
+        </div>
+        <div class="stat">
+          <div class="number">0</div>
+          <p>Rewards</p>
+        </div>
+      </div>
+
+      <div class="stamp-title">YOUR STAMP COLLECTION</div>
+
+      <div class="stamps">
+        <div class="stamp">☆</div>
+        <div class="stamp">☆</div>
+        <div class="stamp">☆</div>
+        <div class="stamp">☆</div>
+        <div class="stamp">☆</div>
+      </div>
+
+      <p class="stamp-note">
+        हर योग्य विज़िट पर एक स्टैम्प।<br>
+        5 स्टैम्प पूरे होने पर रिवॉर्ड की पात्रता।
+      </p>
+    </section>
+
+    <section class="notice">
+      <strong>आपकी Loyalty Journey शुरू होने वाली है!</strong>
+      <br>
+      यह कार्ड अभी डिज़ाइन का प्रारंभिक रूप है।
+      आपकी असली विज़िट और स्टैम्प की जानकारी
+      सुरक्षित रूप से जोड़ने के बाद दिखाई देगी।
+    </section>
+
+    <footer>
+      CHARMING BEAUTY CARE<br>
+      Ladies Beauty Parlour & Training Center<br>
+      Arera Colony, Bhopal
+    </footer>
+  </main>
+</body>
+</html>
